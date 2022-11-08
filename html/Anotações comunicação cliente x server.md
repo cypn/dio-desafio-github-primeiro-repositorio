@@ -1,0 +1,246 @@
+# Entendendo comunicação cliente x server
+
+html = é um hipertexto, linguagem de marcação de hipertexto
+
+## Clientes (Clients)
+
+Cliente = consumidor de informação da internet
+
+- exemplos: computadores, celulares, notebooks.
+
+- arquivos estáticos são enviados do servidor para o cliente, depende da velocidade de conexão do cliente e do tamanho dos arquivos.
+  
+  - exemplos HTML, CSS, Javascript, imagens...
+  
+  - arquivos estáticos são armazenados no cache dentro do navegador do cliente
+
+- Conecta a internet (protocolo HTTP)  e se comunica com o servidor.
+
+- Deve-se considerar os diferentes dispositivos que podem acessar os sites. (Design Responsivo, responsividade)
+
+- Boas práticas e testes: compatibilidade com diferentes navegadores, comportamentos diferentes no mesmo dispositivo de acordo com a interpretação do navegador.
+
+#### Navegadores:
+
+- programas instalados no dispositivo e interpretam os arquivos que vem do servidor web.
+
+- padrão W3C, base é a mesma para todos.
+
+- também chamados de browsers.
+
+- ferramenta para utilizar a internet.
+
+- [HTML Reference Browser Support](https://www.w3schools.com/tags/ref_html_browsersupport.asp)
+  
+  - lista de comandos e suporte de cada navegador.
+  
+  - as tags mais básicas devem funcionar em todos os navegadores.
+
+#### Aplicações Web
+
+- navegador é uma aplicação web?
+
+- aplicações web são soluções criadas que possuem a internet como meio de comunicação entre client x server não sendo necessária a sua instalação.
+
+- acessadas através do navegador.
+
+- apps instalados tem outra abordagem de programação. Existem semelhanças, mas são diferentes na forma de programação.
+
+#### Dispositivos móveis
+
+- ex: notebooks, celular, tablet, smartwatch...
+
+- importante quando o público alvo é o público em geral, não empresas necessáriamente, pelo aumento no uso de dos smartphones.
+
+- responsividade, testes, compatibilidade devem ser levadas em consideração.   
+
+## Servidores (Servers)
+
+- sites são hospedados no servidor.
+
+- pode se conectar com bancos de dados.
+
+- servidor pode ser para internet
+
+- servidor pode ser conectado a uma rede local LAN (Local area network), geralmente empresas, computadoor central é um servidor
+
+- computador mais robusto pq exige processamento, serve a varios dispositivos
+
+- Tipos
+  
+  - arquivos (central de imagens, videos, etc)
+  
+  - Segurança (Firewall)
+  
+  - Streaming (principalmente videos)
+  
+  - E-mail (Armazena e envia os emails)
+  
+  - Web
+
+- data centers são conjuntos de servidores
+
+#### Hardware e software para servidores
+
+- Softwares: parte lógica, programas instalados
+
+- Hardwares: partes fisicas, armazenamento, memória, processadores.
+
+- servidor tem um sistema operacional que tem um servidor web instalado dentro
+
+- Sistema operacional: 
+  
+  - exemplos: Windows Server, Ubuntu CentOS, debian, fedora, Oracle Linux
+
+- Servidores Web: 
+  
+  - exemplos: Apache, NNGINX
+
+- Como funciona um servidor:
+1. requisição Http (client pede alguma informação)
+
+2. sistema operacional parra para o servidor 
+
+3. servidor processa 
+
+4. servidor envia informação (HTML, CSS, Javascript, imagem, texto...) de volta para o cliente
+
+#### Tipos de Servidores
+
+- problemas podem ocorrer devido a arquitetura do servidor
+
+- Servidor Proxy
+  
+  - bloqueio de sites em empresas
+  
+  - bloqueio antes do acesso a internet
+  
+  - pode ser para autenticação
+  
+  - problemas: pode bloquear html na volta para o cliente
+
+- Firewall
+  
+  - segurança contra acesso externo
+  
+  - barreira de segurança entre cliente e internet
+
+- web server
+  
+  - hospedagem de sites
+
+- email server
+  
+  - armazena emails
+
+- application server
+  
+  - apps web
+
+- database server
+  
+  - servidor de aplicação pode acessar server de data base para acessar os dados armazenados
+
+- Intranet
+  
+  - Servidor web sem internet
+  
+  - rede corporativa
+  
+  - somente na rede local
+
+- DNS (Domain name service)
+  
+  - tcp ip
+  
+  - redireciona o nome para o ip especifico
+
+- dominio é o nome do site
+  
+  - https://registro.br/
+  
+  - todos os sites brasileiros são registrados no registro br
+  
+  - configurar o servidor DNS para o site
+
+#### Hospedagem de sites
+
+- colocar os arquivos do site em um servidor disponivel na internet para os clientes acessarem
+
+- empresas oferecem planos de hospedagem
+  
+  - tambem oferecem registro
+  
+  - https é uma conecxão segura com certificado SSL
+  
+  - fornece o DNS para a hospedagem do site
+
+- o dominio registrado é tanto para site quanto para email
+
+- FTP (File transfer Protocol)
+  
+  - conexão com o servidor que  exclusivamente manda e recebe arquivos
+  
+  - exemplo de programa para FTP Filezilla
+  
+  - envio dos html para o servidor
+
+## Linguagens de programação
+
+-   conjunto de informação inseridas no computador
+
+- 5 primeiras linguagens mais populares segundo redmonk set/2012 a jan/2022
+
+- 1. Javascript
+  
+  2. Python
+  
+  3. Java
+  
+  4. PHP
+  
+  5. C#
+
+#### Server-side
+
+- linguagens de programação que rodam do lado do servidor
+
+- lógica e processamento
+
+- Exemplos: php, Java, Ruby, C#, Javascript
+
+- Aprenda ao menos uma linguagem
+
+- Prefira aquela em que a comunidade é mais engajada (mais fácil tirar dúvidas e documentação mais atualizada)
+
+- trabalhar dos dois lados pode ser bom
+
+#### Client-side
+
+- Linguagens de programação que rodam do lado do cliente em apps web
+
+- rodam na maquina do cliente
+
+- Exemplo: Javascript 
+  
+  - javascript executa dos dois lados 
+  
+  - chrome e outros browsers utilizam mecanismo v8 que executa e interpreta o javascrip
+  
+  - node js é parecido com o v8 e roda o javascrip no servidor
+  
+  - é o v8 que roda o javascript. para rodar nos dois lados mudam alguns detalhes, mas a linguagem é a mesma.
+  
+  - https://v8.dev/
+
+## HTML não é uma linguagem de programação
+
+- é um arquivo de marcação
+
+- delimitadores interpretados pelo navegador
+
+- 
+
+
+
+
