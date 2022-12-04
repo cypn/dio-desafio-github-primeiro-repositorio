@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/textos.css">
+    <style>
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>text-transform</code></h1>
+    <p id="transform">
+        É RESPONSÁVEL por definir quais caracteres vão estar em Maiúsculo, minúsculo, etc.
+
+    </p>
+
+    <hr>
+    <h1>Propriedade <code>text-align</code></h1>
+    <p class="align"> 
+        Essa propriedade é responsável por alinhar o nosso texto no nosso elemento.
+    </p>
+    <br><br>
+    <p class="align ex-align">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum aperiam, perferendis nobis vel non sint cumque consequuntur iste nostrum nemo culpa at ducimus aliquam sed sit earum quae vero?
+    </p>
+
+    <hr>
+    <h1>Propriedade <code>text-decoration</code></h1>
+    <p id="decoration">
+        Adiciona ou remove linhas do nosso texto: sejam linhas em cima, no meio ou embaixo.
+    </p>
+
+    <p>
+        É uma propriedade abreviada de:
+        <ul>
+            <li><code>text-decoration-line</code></li>
+            <li><code>text-decoration-style</code></li>
+            <li><code>text-decoration-color</code></li>
+            <li><code>text-decoration-thickness</code></li>
+        </ul>
+    </p>
+
+    <a href="#">Link de exemplo</a><br>
+    <s>Texto de exemplo</s><!--texto riscado-->
+
+    <hr>
+    <h1>Propriedade <code>text-indent</code></h1>
+    <p class="indent">
+        Define o recuo da primeira linha do nosso texto
+    </p>
+    <p class="indent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit ex, nisi reprehenderit inventore dicta sunt rem voluptatem id architecto, animi ad unde officiis possimus et iusto voluptate illo non.
+    </p>
+
+    <hr>
+    <h1>Propriedade <code>letter-spacing</code></h1>
+    <p id="exemplo-letter-spacing">
+        Adicionar um espaço entre cada CARACTERE do seu texto. Como o nome já diz, espaçamento entre as letras.
+    </p>
+    <h1>Propriedade <code>word-spacing</code></h1>
+    <p id="exemplo-word-spacing">
+        Adicionar um espaçamento entre cada PALAVRA do seu texto. Como o nome já diz, espaçamento entre as palavras.
+    </p>
+
+    <hr>
+    <h1>Propriedade <code>white-space</code></h1>
+    <p>Define como os espaços em branco do texto de um determinado elemento são tratados</p>
+
+    <i>Exemplos:</i> <br><br>
+
+    <code>white-space: normal;</code>
+    <p class="white-space">
+        <span>
+            Lorem                       ipsum dolor sit amet consectetur 
+            adipisicing elit. Natus ullam placeat quo, 
+            veritatis repellendus libero.         Quis nihil 
+            velit veniam fugiat saepe illo animi nesciunt,
+            accusantium, aspernatur hic autem suscipit vel.                                                                     
+        </span>
+    </p>
+
+    <code>white-space: nowrap;</code>
+    <p class="white-space" id="nowrap">
+       <span>
+            Lorem                       ipsum dolor sit amet consectetur 
+            adipisicing elit. Natus ullam placeat quo, 
+            veritatis repellendus libero.         Quis nihil 
+            velit veniam fugiat saepe illo animi nesciunt,
+            accusantium, aspernatur hic autem suscipit vel.                                                                     
+        </span>
+    </p>
+    <code>white-space: pre;</code>
+    <p class="white-space" id="pre">
+        <span>
+            Lorem                       ipsum dolor sit amet consectetur 
+            adipisicing elit. Natus ullam placeat quo, 
+            veritatis repellendus libero.         Quis nihil 
+            velit veniam fugiat saepe illo animi nesciunt,
+            accusantium, aspernatur hic autem suscipit vel.                                                                     
+        </span>
+    </p>
+    <code>white-space: pre-line;</code>
+    <p class="white-space" id="pre-line">
+        <span>
+            Lorem                       ipsum dolor sit amet consectetur 
+            adipisicing elit. Natus ullam placeat quo, 
+            veritatis repellendus libero.         Quis nihil 
+            velit veniam fugiat saepe illo animi nesciunt,
+            accusantium, aspernatur hic autem suscipit vel.                                                                     
+        </span>
+    </p>
+    <code>white-space: pre-wrap;</code>
+    <p class="white-space" id="pre-wrap">
+        <span>
+            Lorem                       ipsum dolor sit amet consectetur 
+            adipisicing elit. Natus ullam placeat quo, 
+            veritatis repellendus libero.         Quis nihil 
+            velit veniam fugiat saepe illo animi nesciunt,
+            accusantium, aspernatur hic autem suscipit vel.                                                                     
+        </span>
+    </p>
+    <code>white-space: break-spaces;</code>
+    <p class="white-space" id="break-spaces">
+        <span>
+            Lorem                       ipsum dolor sit amet consectetur 
+            adipisicing elit. Natus ullam placeat quo, 
+            veritatis repellendus libero.         Quis nihil 
+            velit veniam fugiat saepe illo animi nesciunt,
+            accusantium, aspernatur hic autem suscipit vel.                                                                     
+        </span>
+    </p>
+    <hr>
+    <h1>Propriedade <code>word-wrap</code></h1>
+    <p>
+        Define, caso uma palavra seja muito grande para caber em uma linha,
+        se ela será quebrada em qualquer caractere para que uma parte dela 
+        fique na linha e o restante na próxima, ou se não, toda palavra deve 
+        ficar na mesma linha e ultrapassar os limites que definimos para o elemento
+    </p>
+    <br>
+    <code>word-wrap: normal;</code>
+    <p id="normal-wrap" class="wrap">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+
+    <br>
+    <code>word-wrap: break-word;</code>
+    <p id="break-word" class="wrap">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+
+    <hr>
+    <h1>Propriedade <code>word-break</code></h1>
+    <p>Define quando o nosso texto deve ter uma quebra de linha.</p>
+    <code>word-break: normal;</code>
+    <p id="normal-word-break" class="word-break">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+    <code>word-break: break-all;</code>
+    <p id="break-all" class="word-break">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+    <code>word-break: keep-all;</code>
+    <p id="keep-all" class="word-break">
+        Trilha de CSS TrilhaDeCSSTudoJunto Trilha de CSS
+    </p>
+    <hr>
+    <h1>Propriedade <code>writing-mode</code></h1>
+    <p>Define a orientação do texto (vertical ou horizontal)</p>
+    <i>Exemplo:</i> <br>
+    <code>writing-mode: horizontal-tb</code>
+    <p id="horizontal-tb" class="writing-mode">
+        Chega de saudade 
+        A realidade é que 
+        sem ela não há
+        paz
+    </p>
+    <code>writing-mode: vertical-rl</code>
+    <p id="vertical-rl" class="writing-mode">
+        Chega de saudade 
+        A realidade é que 
+        sem ela não há
+        paz
+    </p>
+    <code>writing-mode: vertical-lr</code>
+    <p id="vertical-lr" class="writing-mode">
+        Chega de saudade 
+        A realidade é que 
+        sem ela não há
+        paz
+    </p>
+    <hr>
+    <h1>Propriedade <code>text-overflow</code></h1>
+    <p>
+        Define o corte do texto no overflow        
+    </p>
+    <i>Exemplo:</i> <br>
+    <code>text-overflow: clip</code>
+    <p id="clip" class="text-overflow">
+        Chega de saudade 
+        A realidade é que 
+        sem ela não há
+        paz
+    </p>
+    <code>text-overflow: ellipsis</code>
+    <p id="ellipsis" class="text-overflow">
+        Chega de saudade 
+        A realidade é que 
+        sem ela não há
+        paz
+    </p>
+    <code>text-overflow: string</code>
+    <p id="string" class="text-overflow">
+        Chega de saudade 
+        A realidade é que 
+        sem ela não há
+        paz
+    </p>
+
+</body>
+</html>

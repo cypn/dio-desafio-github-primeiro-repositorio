@@ -1,0 +1,156 @@
+#transform{
+    text-transform: none;/*padrão*/
+    text-transform: capitalize; /* inicio de frase em maiuscula, o resto mantém como digitado*/
+    text-transform: uppercase; /*transforma tudo em caixa alta*/
+    text-transform: lowercase;/* tudo minusculo*/
+    text-transform: initial;
+    text-transform: inherit;
+}
+/*text-align*/
+.ex-align{
+    width: 370px;
+    border: 1px solid black;
+}
+.align{
+    padding: 10px;
+    background-color: lavender;
+
+    text-align: left;/*padrão*/
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+}
+
+/*text-decoration*/
+#decoration{
+    text-decoration: none;/*valor padrão*/
+    text-decoration: underline;
+    text-decoration: line-through;/*efeito riscado*/
+    text-decoration: overline;
+    text-decoration-line: underline;/*mesmos valores que em cima*/
+
+    text-decoration-style: solid;
+    text-decoration-style: double;
+    text-decoration-style: dotted;
+    text-decoration-style: dashed;
+    text-decoration-style: wavy;
+
+    text-decoration-color: red;/* define cor diferente para a linha*/
+
+    text-decoration-thickness: 5px;/*Qual a espessura da linha*/
+
+    text-decoration: underline solid red 1px;
+}
+a{
+    text-decoration: none;
+}
+.indent {
+    text-indent: 30px;/*recuo do parágrafo*/
+}
+
+#exemplo-letter-spacing{
+    letter-spacing: normal;
+    letter-spacing: 2px;
+    letter-spacing: -1px;
+    letter-spacing: 3px;
+}
+
+#exemplo-word-spacing{
+    word-spacing: normal;
+    word-spacing: 12px;
+    word-spacing: 30px;
+    word-spacing: -10px;
+    word-spacing: 5px;
+}
+
+.white-space{
+    width: 200px;
+    background-color: chartreuse;
+}
+span{
+    background-color: seagreen;
+    color: white;
+}
+/*normal: espaços deixa só um, 
+ignora quebras de linha
+respeita limite do elemento*/
+#nowrap{
+    white-space: nowrap;
+/*não quebra linha ignora largura do elemento os espaços são juntados para 1*/
+}
+#pre{
+    white-space: pre;
+/* conserva os espaços, texto não quebra fora das quebras originais. ignora largura do elemento*/
+}
+#pre-line{
+    white-space: pre-line;
+/* junta espaços em branco. quebra texto quando necessário e nos limites*/
+}
+#pre-wrap{
+    white-space: pre-wrap;
+/*espaços em branco preservados, quebras de linha quando necessários e nas quebras de linha*/
+}
+#break-spaces{
+    white-space: break-spaces;
+    /*igual a pre-wrap, mas quebra espaços para próxima linha*/
+}
+
+.wrap, .word-break{
+    width: 100px;
+    color: black;
+    background-color: blueviolet;
+}
+#normal-wrap{
+    word-wrap: normal;
+    /*valor padrão, ultrapassa limite*/
+}
+#break-word{
+    word-wrap: break-word;
+}
+
+.word-break{
+    background-color: aquamarine;
+}
+#break-all{
+    word-break: break-all;
+}
+#keep-all{
+    word-break: keep-all;
+    /*usado principalmente para japones, chines e coreano 
+    já que não pode quebra linhas nessas linguas*/
+}
+.writing-mode{
+    width: 120px;
+    height: 120px;
+    color: black;
+    background-color: chartreuse;
+}
+/*usado para chines, japones e coreano, mas tambem pode ser usado para fins estéticos*/
+#horizontal-tb{
+    writing-mode: horizontal-tb;/*valor padrão*/
+}
+#vertical-rl{
+    writing-mode: vertical-rl;
+}
+#vertical-lr{
+    writing-mode: vertical-lr;
+}
+
+.text-overflow{
+    width: 200px;
+    color: black;
+    background-color: chartreuse;
+    white-space: nowrap;
+    overflow: hidden;/*esconde resto do texto do usuário*/
+}
+
+#clip{
+    text-overflow: clip; /*valor padrão, corta o texto*/
+}   
+#ellipsis{
+    text-overflow: ellipsis;/*mais indicado!! adiciona reticencias no texto cortado*/
+}
+#string{
+    /*adiciona valor específico, só funciona no firefox*/
+    text-overflow: 'Ver mais >';
+}

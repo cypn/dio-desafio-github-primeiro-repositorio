@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .exemplo-pixel{
+            font-size: 30px;
+            background-color: lightblue;
+            width: 300px;
+        }
+        .exemplo-porcentagem{
+            font-size: 30px;
+            background-color: lightpink;
+            width: 50%;
+        }
+        #elemento-pai{
+            width: 500px;
+            font-size: 40px;
+            border: 5px solid black;
+        }
+
+        /*unidade em*/
+        p{
+            margin: 0;
+        }
+        div{
+            padding: 10px;
+        }
+        .exemplo-01{
+            background-color: yellow;
+        }
+        .exemplo-02{
+            background-color: palevioletred;
+        }
+        .exemplo-03{
+            background-color: aquamarine;
+        }
+        body{
+            margin: 20px;
+        }
+        .exemplo-1{
+            background-color: yellow;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        .exemplo-2{
+            box-sizing: border-box; 
+            background-color: palevioletred;
+            width: calc(100% - 30px);
+           /*pode fazer qualquer soma, 
+           multiplicação, subtração, divisão...
+           separar operadores por espaço
+           pode usar unidades de medida absoluta 
+           e relativa juntas*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Porcentagem</h1>
+    <p>Pixel vs Porcentagem</p>
+    <div class="exemplo-pixel">
+        width: 300px;
+    </div>
+    <div class="exemplo-porcentagem">
+        width: 50%;
+    </div>
+    <br><br><hr><br><br>
+    <p>Elemento pai possui 500px de largura e um font-siza de 40 px.</p>
+    <div id="elemento-pai">
+        <div class="exemplo-pixel">
+            width: 300px
+        </div>
+        <div class="exemplo-porcentagem" style="font-size:50%;">
+            width: 50%
+        </div>
+    </div>
+    <hr>
+    <h1>Unidade de medida em</h1>
+    <p style="font-size: 1em;">
+        font-size: 1em = 16px;
+    </p>
+    <p style="font-size: 2em;">
+        font-size: 2em = 32px;  
+    </p>
+    <p style="font-size: 3em;">
+        font-size: 3em = 48px;
+    </p>
+    <hr><br>
+    
+    <div class="exemplo-01" style="font-size: 20px;">
+        font-size: 20px;
+        <div class="exemplo-02" style="font-size: 2em;">
+            font-size: 2em = 40px;
+            <div class="exemplo-03" style="font-size: 2em;">
+                font-size: 2em = 80px;
+                <div class="exemplo-01" style="font-size: 2em;">
+                    teste
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="exemplo-02" style="font-size: 30px; width: 10em;">
+        font-size: 30px; <br>
+        width: 10em = 300px
+        <!--baseado no fontsize do elemento pai ou do próprio em-->
+    </div>
+
+    <hr>
+    <h1>Unidade de medida rem</h1>
+    <p style="font-size: 1rem;">
+        font-size: 1rem = 16px;
+    </p>
+    <p style="font-size: 2rem;">
+        font-size: 2rem = 32px;  
+    </p>
+    <p style="font-size: 3rem;">
+        font-size: 3rem = 48px;
+    </p>
+    <hr><br>
+    
+    <div class="exemplo-01" style="font-size: 20px;">
+        font-size: 20px;
+        <div class="exemplo-02" style="font-size: 2rem;">
+            font-size: 2rem = 32px;
+            <div class="exemplo-03" style="font-size: 3rem;">
+                font-size: 3rem = 48px;
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="exemplo-01" style="font-size: 20px;">
+        font-size: 20px;
+        <div class="exemplo-02" style="font-size: 2rem;">
+            font-size: 2rem = 32px;
+            <div class="exemplo-03" style="font-size: 2rem;">
+                font-size: 2rem = 32px;
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="exemplo-02" style="font-size: 30px; width: 10rem;">
+        font-size: 30px; <br>
+        width: 10em = 160px;
+    </div>
+
+
+    <hr>
+    <h1>Unidade de medida em x rem</h1>
+    <p style="font-size: 2rem;">
+        font-size: 2rem; 
+    </p>
+    <p style="font-size: 2em;">
+        font-size: 2em;  
+    </p>
+    <p style="font-size: 200%;">
+        font-size: 200%;
+    </p>
+    <hr><br>
+    
+    <div class="exemplo-01" style="font-size: 2rem;">
+        font-size: 2rem;
+        <div class="exemplo-02" style="font-size: 2em;">
+            font-size: 2em;
+            <div class="exemplo-03" style="font-size: 200%;">
+                font-size: 200%;
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="exemplo-01" style="font-size: 2rem;">
+        font-size: 2rem;
+        <div class="exemplo-02" style="font-size: 2em;">
+            font-size: 2em;
+        </div>
+        <div class="exemplo-03" style="font-size: 200%;">
+            font-size: 200%;
+        </div>
+        <div class="exemplo-02" style="font-size: 2rem;">
+            font-size: 2rem;
+        </div>
+    </div>
+    <hr>
+    <h1> Unidade de medida vw/vh/vmin/vmax</h1>
+    <div class="exemplo-01" style="width: 50%;">
+        width: 50%;
+    </div>
+    <div class="exemplo-02" style="width: 50vw;">
+        width: 50vw;
+    </div>
+    <div class="exemplo-03" style="width: 50vh;">
+        width: 50vh;
+    </div>
+
+    <br><hr><br>
+    <div class="borda" style="width: 300px;">
+        <div class="exemplo-01" style="width: 50%;">
+            width: 50%;
+        </div>
+        <div class="exemplo-02" style="width: 50vw;">
+            width: 50vw;
+        </div>
+        <div class="exemplo-03" style="width: 50vh;">
+            width: 50vh;
+    </div>
+    <br><hr><br>
+    <div class="exemplo-01" style="width: 10vmin;">
+        width: 10vmin;
+        <!--porcentagem do menor valor entre a altura e a largura-->
+    </div>
+    <div class="exemplo-02" style="width: 10vmax;">
+        width: 10vmax;
+    </div>
+    
+
+
+    <hr>
+    <h1>Função calc</h1>
+
+    <div class="exemplo-1">
+        Elemento Pai
+        <div class="exemplo-2">
+            Elemento Filho
+        </div>
+    </div>
+
+</body>
+</html>

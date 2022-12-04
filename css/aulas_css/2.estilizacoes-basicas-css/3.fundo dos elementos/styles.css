@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+div {
+    margin-bottom: 30px;
+}
+.exemplo{
+    width: 300px;
+    height: 300px;
+    background-color: palevioletred;
+    /*background-image: url('caminho');
+    imagens podem ser colocadas
+    - maiores podem ficar muito grandes, da pra alterar
+    - menores se repetem, podem ser alteradas
+    - pode ser em qualquer formato
+    */
+    background-image: linear-gradient(lightpink, palevioletred, purple);
+    
+    /*função de gradiente, 
+    pode alterar bastante, 
+    podem ser usadas várias cores,  
+    ver configuraçoes na documentação
+    linear-gradient: gradiente de cima para baixo
+    radial-gradient: gradiente de dentro pra fora em circulo
+    */
+    background-image: radial-gradient(lightpink, palevioletred, purple);
+    /*efeito de listras*/
+    background-image: repeating-linear-gradient(to top, palevioletred 0 20px, lightpink 20px 40px);
+}
+.exemplo2{
+    width: 300px;
+    height: 300px;
+    /*sobrepondo imagens: a primeira imagens será a camada mais a frente da composição*/
+    background-image:url(imagens/95ce2b2e-ccc0-40d8-ae56-65178fc030b9.png), url('imagens/background-01.jpg');
+}
+.redimensiona{
+    width: 300px;
+    height: 300px;
+    background-image: url('imagens/background-01.jpg');
+}
+#cover {
+    background-size: cover;
+    /*ocupa todo o espaço da div*/
+}
+#contain{
+    background-size: contain;
+    /*redimensiona o conteúdo para que caiba na div, a imagem pode se repetir*/
+}
+#tamanho{
+    background-size: 200px;
+    background-size: 50%;
+    /*Pode ser em px ou %
+    passado 1 valor é definida a largura*/
+    
+}
+#exemplo-x-y{
+    background-size: 200px 100%;
+}
+#exemplo-camadas{
+    background-image: url(imagens/95ce2b2e-ccc0-40d8-ae56-65178fc030b9.png),url(imagens/background-01.jpg);
+    background-size: contain, cover;
+}
+
+.repeticao{
+    width: 300px;
+    height: 300px;
+    background-image: url(imagens/transferir.jpg);
+    background-size: 120px;
+    border: 1px solid red;
+}
+
+#repeat-x{
+    background-repeat: repeat-x;
+}
+
+#repeat-y{
+    background-repeat: repeat-y;
+}
+#space{
+    background-repeat: space;
+}
+#round{
+    background-repeat: round;
+}
+#no-repeat{
+    background-repeat: no-repeat;
+}
+#valores-x-y{
+    background-repeat: repeat space;
+    background-repeat: no-repeat round;
+}
+.posicao{
+    width: 300px;
+    height: 300px;
+    background-image: url(imagens/background-01.jpg);
+    background-size: 120px;
+    border: 1px solid red;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: top;
+    background-position: left;
+    background-position: right;
+    background-position: 10px;
+    background-position: 5%;
+    background-position: horizontal vertical;
+    background-position: center top;
+    background-position: center 80%;
+    background-position: right bottom;
+    background-position: bottom 10px right 20px;
+}
+.attachment{
+    width: 300px;
+    height: 300px;
+    background-image: url('imagens/transferir.jpg');
+    background-size: cover;
+    border: 1px solid red;
+    overflow: auto;
+    /*overflow auto cria a barra de rolamento*/
+}
+body{
+    height: 200vh;
+}
+#fixed{
+    background-attachment: fixed;
+}
+
+#scroll{
+    background-attachment: scroll;
+}
+#local{
+    background-attachment: local;
+}
+.origin{
+    width: 300px;
+    height: 300px;
+    background-image: url(imagens/background-01.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 15px dashed palegreen;
+    padding: 30px;
+}
+#padding-box{
+    background-origin: padding-box;
+}
+#border-box{
+    background-origin: border-box;
+}
+#content-box{
+    background-origin: content-box;
+}
+.clip{
+    width: 300px;
+    height: 300px;
+    border: 15px dashed palegreen;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: palevioletred;
+}
+#padding-box-c{
+    background-clip: padding-box;
+}
+#border-box-c{
+    background-clip: border-box;
+}
+#content-box-c{
+    background-clip: content-box;
+}
+#text-c{
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    /*necessário colocar -webkit- para o chrome entender o que é para ser feito
+    pode colocar imagem ou padrão, mudar fonte, etc
+    cor transparente é para o background aparecer nas letras*/
+}
+.mesclagem{
+    width: 300px;
+    height: 300px;
+    border: 15px dashed palegreen;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: blue;
+    background-image: url('https://img.freepik.com/free-vector/abstract-painted-brush-strokes-background_52683-18870.jpg?w=2000');
+    background-blend-mode: normal;
+    /*
+    resultado depende muito da cor e do fundo
+    Pode ser feita mesclagem de várias imagens
+    normal- padrão
+    multiply: mescla com a cor de fundo
+    screen
+    overlay
+    darken
+    lighten
+    color-dodge
+    color-blur
+    hard-light
+    soft-light
+    difference
+    exclusion
+    hue
+    saturation
+    color
+    luminosity*/
+}
+.background{
+    width: 300px;
+    height: 300px;
+    border: 15px dashed palegreen;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    background: 
+        url(imagens/transferir.jpg)/*image*/,
+        top center / 200px 200px /*position / size*/,
+        no-repeat /*repeat*/,
+        fixed/*attachement*/,
+        padding-box /*origin*/,
+        content-box /*clip*/,
+        red /*color*/
+    ;
+}

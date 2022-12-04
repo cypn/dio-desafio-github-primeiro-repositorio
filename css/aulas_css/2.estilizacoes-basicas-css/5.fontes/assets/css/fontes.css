@@ -1,0 +1,58 @@
+* {
+    font-family: sans-serif;
+    /*pode definir uma fonte específica ou uma familia
+    nome da fonte sem aspas quando só um nome ou separado por -
+    só fontes instaladas nos sistemas operacionais
+    */
+    font-family: fantasy;
+    font-family: serif;
+    font-family: monospace;
+    font-family: cursive;
+    font-family: "Times New Roman", "Arial", sans-serif;/*fallbacks se não encontra a primeira vai para a próxima*/
+    font-family: Arial;
+}
+
+/*Costumizar fontes
+download do arquivo fontes para a pasta 
+regra css @nome da regra*/
+@font-face {
+    font-family: Roboto;
+    src:local(), url(./assets/fonts/Roboto-Regular.ttf);
+/*local() procura na máquina do usuário antes*/
+/*Configurações opcionais
+font-: weight, style, stretch*/
+    font-weight: normal;
+}
+@font-face{
+    font-family: Roboto;
+    src: url(./assets/fonts/Roboto-Black.ttf);
+    font-weight: bold;
+}
+
+* {
+    font-family: Roboto;
+}
+p{
+    font-family: Roboto;
+    font-weight: bold;
+}
+/*Importar fontes de arquivos externos - recomendada
+ex: google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    font-family: Roboto;
+}
+p{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*criar arquivo global com as fontes usadas e importar, facilita a manutenção*/
+@import url(./global.css);
+
+
+
+
+
+
+

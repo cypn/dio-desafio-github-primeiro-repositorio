@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="./assets/css/fontes.css">-->
+    <title>Fontes</title>
+    <style>
+        #tamanho{
+            font-size: 20px;
+        }
+
+        #xx-small{
+            font-size: xx-small;
+        }
+        #x-small{
+            font-size: x-small;
+        }
+        #small{
+            font-size: small;
+        }
+        #medium{
+            font-size: medium;
+        }
+        #large{
+            font-size: large;
+        }
+        #x-large{
+            font-size: x-large;
+        }
+        #xx-large{
+            font-size: xx-large;
+        }
+        /*valores baseados na definição padrão dos usuarios*/
+        div{
+            font-size: 30px;
+        }
+
+        div p{
+            font-size: smaller;
+            /*larger ou smaller em relação ao elemento pai*/
+        }
+
+        #italic{
+            font-style: italic;
+            /*tag i no html tem mesmo efeito*/
+        }
+        #oblique{
+            font-style: oblique;
+            /* similar a italic
+            não tão suportado e menos utilizado*/
+        }
+
+        #exemplo-weight{
+            font-weight: 300;
+            /*valores de 100 a 900, nem todas as fontes apresentam diferença*/
+        }
+
+        #bold{
+            font-weight: bold;
+        }
+        div{
+            font-weight: normal;
+        }
+        div p{
+            font-weight: lighter;/*ou bolder*/
+        }
+
+        #exemplo-variant{
+            font-variant: small-caps;
+        }
+
+        #ultra-condensed{
+            font-stretch: ultra-condensed;
+        }
+        #extra-condensed{
+            font-stretch: extra-condensed;
+        }
+        #semi-condensed{font-stretch: semi-condensed;}
+        #normal{font-stretch: normal;}
+        #semi-expanded{font-stretch: semi-expanded;}
+        #expanded{font-stretch: expanded;}
+        #extra-expanded{font-stretch: extra-expanded;}
+        #ultra-expanded{font-stretch: ultra-expanded;}
+    
+        #line-height{
+            line-height: normal;
+            line-height: 2;
+            line-height: 200%;
+            /*
+            normal: padrão mais ou menos 1.2
+            números são multiplicados pelo tamanho da fonte
+            porcentagem
+            recomendado pelo menos 1.5 para ajudar na leitura
+            recomendado usar somente um valor sem unidade de medida
+            */
+        }
+    #exemplo-font{
+        font: italic small-caps bold 24px / 2 Georgia, serif;
+    }
+   
+
+
+
+    </style>
+</head>
+<body>
+    <h1> Propriedade <code>font-size</code></h1>
+    <p id="tamanho">Alterando tamanho do texto</p>
+    <code>font-size: xx-small;</code>
+    <p id="xx-small">xx-small</p>
+    <code>font-size: x-small;</code>
+    <p id="x-small">x-small</p>
+    <code>font-size: small;</code>
+    <p id="small">small</p>
+    <code>font-size: medium;</code>
+    <p id="medium">medium</p>
+    <code>font-size: large;</code>
+    <p id="large">large</p>
+    <code>font-size: x-large;</code>
+    <p id="x-large">x-large</p>
+    <code>font-size: xx-large;</code>
+    <p id="xx-large">xx-large</p>
+
+    <hr>
+    <div>
+        Elemento pai
+        <p>Elemento filho</p>
+    </div>
+    <br>
+    <hr>
+    <h1>Propriedade <code>font-style</code></h1>
+    <p id="tamanho">Define qual o estilo que a fonte deve ter (normal, itálica ou oblíqua)</p>
+    <code>font-style: normal</code>
+    <p>normal</p>
+    <code>font-style: italic</code>
+    <p id="italic">italic</p>
+    <code>font-style: oblique</code>
+    <p id="oblique">oblique</p>
+
+    <hr>
+    <h1>Propriedade <code>font-weight</code></h1>
+    <p id="exemplo-weight"> Define qual espessura a fonte deve ter</p>
+    <code>font-weight: normal</code>
+    <p>normal</p>
+    <code>font-weight: bold</code>
+    <p id="bold">bold</p>
+
+    <hr>
+    <div>
+        Elemento pai
+        <p>Elemento filho</p>
+    </div>
+
+    <hr>
+    <h1>Propriedade <code>font-variant</code></h1>
+    <p id="exemplo-variant">Define se o texto deve ser exibido em formato versalete (Small caps) </p>
+
+    <hr>
+    <h1>Propriedade <code>font-stretch</code></h1>
+    maioria das fontes não dão suporte
+    <code>font-stretch: ultra-condensed</code>
+    <p id="ultra-condensed">Meu texto</p>
+    <code>font-stretch: extra-condensed</code>
+    <p id="extra-condensed">Meu texto</p>
+    <code>font-stretch: semi-condensed</code>
+    <p id="semi-condensed">Meu texto</p>
+    <code>font-stretch: normal</code>
+    <p id="normal">Meu texto</p>
+    <code>font-stretch: semi-expanded</code>
+    <p id="semi-expanded">Meu texto</p>
+    <code>font-stretch: expanded</code>
+    <p id="expanded">Meu texto</p>
+    <code>font-stretch: extra-expanded</code>
+    <p id="extra-expanded">Meu texto</p>
+    <code>font-stretch: ultra-expanded</code>
+    <p id="ultra-expanded">Meu texto</p>
+
+    <hr>
+    <h1>Propriedade <code>line-height</code></h1>
+    <p id="line-height">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci voluptas quis, autem nobis repudiandae sapiente vel blanditiis ex possimus voluptatibus in velit quidem, ad quaerat iusto, at magnam eveniet.
+        In adipisci quos exercitationem hic eos reprehenderit, ullam magni molestias rem consequuntur non cumque omnis quas voluptates obcaecati. Iure eligendi dolorum magnam aliquam suscipit soluta doloremque facere labore explicabo pariatur?
+        Error quas, reprehenderit earum facilis eius blanditiis quisquam repellendus repellat. Minus repellendus a illum facilis libero odit autem, aperiam adipisci consequuntur accusamus debitis ex cum saepe laborum, provident repudiandae sed!
+        Nihil nostrum numquam nesciunt quod, dolore, nisi magnam, sed dolores cupiditate accusantium exercitationem in! Quam magni dicta tempora obcaecati natus qui, unde veniam minus ipsam blanditiis consequatur adipisci asperiores nostrum.
+        Nihil, tempora. Ratione vitae sapiente earum dolorum illo, laborum molestiae, unde iusto, eos amet recusandae. Voluptas aut, in natus beatae provident aspernatur assumenda adipisci laboriosam minus vero, repellendus voluptatum odio.
+    </p>
+
+    <hr>
+    <h1>Propriedade <code>font</code></h1>
+    <p>Aceita, em uma única linha de código as propriedades:</p>
+    <ul>
+        <li><code>font-style</code></li>
+        <li><code>font-variant</code></li>
+        <li><code>font-weight</code></li>
+        <li><code>font-size/line-weight</code></li>
+        <li><code>font-family</code></li>
+    </ul>
+    <p id="exemplo-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quia modi tempore inventore perspiciatis velit numquam amet, quasi aliquid! Porro laboriosam quaerat voluptas ea rerum temporibus voluptatibus modi fuga nesciunt.
+    Quasi explicabo laudantium eos consequatur deserunt, fuga accusamus! Voluptate architecto modi illum veniam fuga, quis porro quidem sit dicta doloremque aliquid, possimus deserunt harum! Dolorem tenetur id alias doloremque. Possimus.
+    Praesentium officiis sit pariatur soluta eaque. Suscipit porro voluptatibus qui praesentium esse totam! Fugit inventore tempore ipsam obcaecati, nulla, molestiae deleniti assumenda sed eos culpa accusantium eum, debitis aperiam consequatur!</p>
+</body>
+</html>

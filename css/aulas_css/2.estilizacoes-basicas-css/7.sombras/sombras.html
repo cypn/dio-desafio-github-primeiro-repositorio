@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box-shadow{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #8f382e;
+            margin: 20px auto;
+            background: #fa8072;
+        
+            box-shadow: inset 10px 10px 10px red, 20px 20px 10px -3px black ;
+            /*valores da sombras:
+            na horizontal e na vertical
+            desfoque
+            propagação da sombra (valores maiores aumenta, menores diminui)
+            inset:sombra dentro do elemento
+            cor
+            pode definir várias camadas de sombra separadas por virgula
+            */
+        }
+
+        img{
+            width: 420px;
+            height: 350px;
+            margin: 20px auto;
+            object-fit: cover;
+            box-shadow: 10px 10px 5px red;
+            /*drop-shadow através de filter
+            colocar sombra em imagens png*/
+            filter: drop-shadow(10px 10px 5px gray);
+        }
+
+        h2{
+            color: deeppink;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: -10px 10px 30px purple;
+            /*
+            sombra na horizontal e na vertical
+            desfoque (quanto maior menos legível é a sombra)
+            cor automatica do texto
+            não tem inset nem valor de propagação
+            aceita valores negativos*/
+            box-shadow: 20px 2
+            0px 30px purple;
+            /*filter drop-shadow tem resultado parecido*/
+            filter: drop-shadow(-10px 10px 1px red);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>box-shadow</code></h1>
+
+    <div id="box-shadow"></div>
+
+    <img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-8.png" alt="">
+
+    <hr>
+    <h1>Propriedade <code>text-shadow</code></h1>
+    <h2>
+        Bem-vindo(a) à Trilha de CSS na DIO!
+    </h2>
+
+</body>
+</html>

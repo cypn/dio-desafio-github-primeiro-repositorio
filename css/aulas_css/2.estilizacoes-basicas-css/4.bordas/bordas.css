@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+body{
+    font-family: Roboto, sans-serif;
+}
+.exemplo{
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 10px;
+    border-width: thin;/*corrsponde a 1px*/
+    border-width: medium;/*3px*/
+    border-width: thick;/*5px*/
+    border-width: 10px 20px;
+    
+    border-width: 10px;
+    border-style: solid;
+    border-style: none;/*padrão*/
+    border-style: dashed;
+    border-style: dotted;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    border-style: dotted dashed solid double;
+
+    color: red;/*a cor da borda segue a mesma da fonte*/
+    border-color: purple greenyellow coral blue;
+    /*pode ser rgb hexadecimal hsl*/
+
+    border: 10px solid palegreen;
+    border-bottom-style:double ;
+    border-top-width: 20px ;
+   /* border-left: ;
+    border-right: ;*/
+
+    /*arredondar cantos*/
+    border-radius: 20px;
+   /*funciona sem a borda ser definida*/
+   border-radius: 20px 10px 30px 50px;
+   border-radius: 50px/100px;
+   border-radius: 50%;/*círculo perfeito para quadrado perfeito*/
+}
+.exemplo_im{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border:30px solid;
+    margin: 50px auto;
+}
+#exemplo-1{
+    /*tem que aplicar uma borda*/
+    border-image-source: url('images/border.png');
+
+    /*slice: repeat só para exemplo, colocar numero e testar*/
+    border-image-repeat: repeat;
+    border-image-slice: 169;
+    /*fill mostra o centro da imagem de borda no fundo, sobrepõe imagem de fundo
+    sem o repeat a imagem é esticada*/
+    /*border-image-width: 10px 20px 30px 40px; pode usar auto e outras unidades de medida*/
+    border-image-repeat: round;
+    /*
+    repeat: divide a imagem para preencher
+    stretch: estica a imagem para caber na borda, exceto os cantos
+    round: evita cortar a imagem, redimenciona
+    space: adiciona espaço para q a imagem se ajuste a imagem
+    */
+
+    /*define qual a distancia da borda em relação ao elemento*/
+    border-image-outset: 30px 10px 60px 100px;
+}
+#exemplo-2{
+    border-image-source: linear-gradient(red,blue);
+    border-image-slice: 10;/*melhor não colocar repeat*/
+    border-image-outset: 2;
+}
+#exemplo-resumido{
+    border-image: url('./images/border.png') 169 / 10px / 1 round;
+}

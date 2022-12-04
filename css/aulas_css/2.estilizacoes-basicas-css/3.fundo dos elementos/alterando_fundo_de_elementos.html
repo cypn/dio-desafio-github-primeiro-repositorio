@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    exemplo gradiente
+    <div class="exemplo"></div>
+    exemplo sobreposição de imagem
+    <div class="exemplo2"></div>
+    <h1>Redimensionamento de imagens</h1>
+    <code>background-size: auto</code> (padrão)
+    <div class="redimensiona" id="auto"></div>
+    <code>background-size: cover</code>
+    <div class="redimensiona" id="cover"></div>
+    <code>background-size: contain</code>
+    <div class="redimensiona" id="contain"></div>
+    <code>background-size: tamanho</code>
+    <div class="redimensiona" id="tamanho"></div>
+    <code>background-size: exemplo-x-y</code>
+    <div class="redimensiona" id="exemplo-x-y"></div>
+    <code>background-size: exemplo-camadas</code>
+    <div class="redimensiona" id="exemplo-camadas"></div>
+    <h1>Repetição das imagens</h1>
+    <code>background-repeat: repeat;</code> (padrão)
+    <div class="repeticao" id="repeat"></div>
+    <code>background-repeat: repeat-x;</code>
+    <div class="repeticao" id="repeat-x"></div>
+    <code>background-repeat: repeat-y;</code>
+    <div class="repeticao" id="repeat-y"></div>
+    <code>background-repeat: space;</code>
+    <div class="repeticao" id="space"></div>
+    <code>background-repeat: round;</code>
+    <div class="repeticao" id="round"></div>
+    <code>background-repeat: no-repeat;</code>
+    <div class="repeticao" id="no-repeat"></div>
+    <code>background-repeat: ;</code>
+    <div class="repeticao" id="valores-x-y"></div>
+
+    <h1>Posição da imagem de fundo</h1>
+    <div class="posicao"></div>
+
+    <h1>Background-attachment</h1>
+    <code>background-attachment: fixed;</code>
+    <div class="attachment" id="fixed">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consequuntur magni voluptates minima magnam quasi accusantium vero asperiores, voluptatum temporibus! Cumque at fugiat consectetur quisquam incidunt quae dolore. Saepe, provident.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore fugiat, odio aperiam commodi totam ullam alias provident excepturi delectus. Repellat sapiente non tenetur pariatur accusamus est vitae nulla voluptatibus minus?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsam eligendi, nulla cumque quos numquam maxime illum. Corporis dolore accusantium vero repellendus eius reiciendis at. Suscipit beatae possimus amet quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui adipisci hic obcaecati nam repellat, eligendi nobis? Sint earum doloremque animi provident recusandae dignissimos eveniet. Magnam cumque ullam quam esse.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam architecto quisquam doloribus beatae debitis, facere voluptas enim dignissimos sunt? Quas libero, doloribus quae delectus consectetur atque necessitatibus. Soluta, in ea!
+    </div>
+    <code>background-attachment: scroll;</code>
+    <div class="attachment" id="scroll">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consequuntur magni voluptates minima magnam quasi accusantium vero asperiores, voluptatum temporibus! Cumque at fugiat consectetur quisquam incidunt quae dolore. Saepe, provident.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore fugiat, odio aperiam commodi totam ullam alias provident excepturi delectus. Repellat sapiente non tenetur pariatur accusamus est vitae nulla voluptatibus minus?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsam eligendi, nulla cumque quos numquam maxime illum. Corporis dolore accusantium vero repellendus eius reiciendis at. Suscipit beatae possimus amet quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui adipisci hic obcaecati nam repellat, eligendi nobis? Sint earum doloremque animi provident recusandae dignissimos eveniet. Magnam cumque ullam quam esse.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam architecto quisquam doloribus beatae debitis, facere voluptas enim dignissimos sunt? Quas libero, doloribus quae delectus consectetur atque necessitatibus. Soluta, in ea!
+    </div>
+    <code>background-attachment: local;</code>
+    <div class="attachment" id="local">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis consequuntur magni voluptates minima magnam quasi accusantium vero asperiores, voluptatum temporibus! Cumque at fugiat consectetur quisquam incidunt quae dolore. Saepe, provident.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore fugiat, odio aperiam commodi totam ullam alias provident excepturi delectus. Repellat sapiente non tenetur pariatur accusamus est vitae nulla voluptatibus minus?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsam eligendi, nulla cumque quos numquam maxime illum. Corporis dolore accusantium vero repellendus eius reiciendis at. Suscipit beatae possimus amet quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui adipisci hic obcaecati nam repellat, eligendi nobis? Sint earum doloremque animi provident recusandae dignissimos eveniet. Magnam cumque ullam quam esse.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam architecto quisquam doloribus beatae debitis, facere voluptas enim dignissimos sunt? Quas libero, doloribus quae delectus consectetur atque necessitatibus. Soluta, in ea!
+    </div>
+
+    <h1>Background origin</h1>
+    <code>background-origin: padding-box </code>
+    <div class="origin" id="padding-box"></div>
+    <code>background-origin: border-box </code>
+    <div class="origin" id=" border-box"></div>
+    <code>background-origin: content-box </code>
+    <div class="origin" id="content-box"></div>
+
+    <h1>Background clip</h1>
+    <code>background-clip: padding-box </code>
+    <div class="clip" id="padding-box-c">
+        Trilha de CSS
+    </div>
+    <code>background-clip: border-box </code>
+    <div class="clip" id=" border-box-c">
+        Trilha de CSS
+    </div>
+    <code>background-clip: content-box </code>
+    <div class="clip" id="content-box-c">
+        Trilha de CSS
+    </div>
+    <code>background-clip: text </code>
+    <div class="clip" id="text-c">
+        Trilha de CSS
+    </div>
+    <h1>Mesclagem</h1>
+    <div class="mesclagem">Trilha de css</div>
+    <h1>Propriedade Background</h1>
+    <div class="background"> TRILHA DE CSS</div>
+</body>
+</html>
